@@ -2,13 +2,10 @@ import streamlit as st
 import google.generativeai as genai
 import json
 import os
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
 
-# Configure Google AI Studio (Gemini API)
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+GOOGLE_API_KEY = st.secrets["api_keys"]["google_api_key"]
+
 if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
 
