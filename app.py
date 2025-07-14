@@ -286,6 +286,17 @@ def show_input_page():
             height=100,
             help="Optional: Provide additional guidance for the AI to generate better questions"
         )
+        st.markdown("---")
+        st.subheader("Number of Questions")
+        num_options = [2, 3, 4, 5]
+        st.selectbox(
+            "Number of Questions (locked to 3)",
+            num_options,
+            index=1,
+            disabled=True,
+            help="Currently only 3 questions are supported."
+        )
+        
         
         submitted = st.form_submit_button("🚀 Generate MCQs", type="primary")
         
