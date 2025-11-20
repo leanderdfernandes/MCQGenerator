@@ -65,7 +65,7 @@ Please generate exactly 3 MCQs based on the above topics and instructions.
 Return ONLY the JSON format as specified above."""
         
         # Generate response using Gemini
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(prompt)
         
         # Parse JSON response
