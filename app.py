@@ -91,12 +91,12 @@ Return ONLY the JSON format as specified above."""
 
 def main():
     st.set_page_config(
-        page_title="MCQ Generator",
+        page_title="LevelUp",
         page_icon="🎓",
         layout="wide"
     )
     
-    st.title("🎓 Engineering MCQ Generator")
+    st.title("🎓 LevelUp")
     st.markdown("Generate multiple-choice questions from your lecture topics using AI")
     
     # Inject custom CSS for professional, minimal UI
